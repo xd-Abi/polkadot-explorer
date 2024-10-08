@@ -1,4 +1,3 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
 import {BlocksProvider} from "./blocks";
 import {HomePage} from "./pages/home";
@@ -10,9 +9,7 @@ const root = ReactDOM.createRoot(
 );
 
 root.render(
-  <React.StrictMode>
-    <BlocksProvider>
-      <HomePage />
-    </BlocksProvider>
-  </React.StrictMode>
+  <BlocksProvider>
+    <HomePage />
+  </BlocksProvider>
 );
